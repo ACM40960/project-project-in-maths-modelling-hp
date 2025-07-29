@@ -267,6 +267,7 @@ In the same activated environment, open jupyter notebook as given below:
 ```
 
 Once the jupyter notebook opens, you can see the 4 jupyter notebook files for training and evaluation, if you followed all the above steps correctly. Now can you run them.
+
 ---
 
 # Structure of the Project
