@@ -42,6 +42,7 @@ By training a **custom YOLOv11/YOLOv12 model** on annotated wildlife images, thi
 - 🌍 **Conservation Efforts**: Helps in the timely monitoring of endangered or invasive species.
 - ⚡ **Speed & Accuracy**: YOLO delivers real-time object detection with high accuracy in complex, cluttered backgrounds.
 - 🌙 **Low-Light Adaptation**: Specifically fine-tuned to work with poor illumination and motion blur in night-time images.
+- 🎥 **Video Detection**: Helps in detecting the species from video which further can be used for live monitoring.
 
 ---
 
