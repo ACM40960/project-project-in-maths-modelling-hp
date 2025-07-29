@@ -18,9 +18,9 @@
 # Introduction
 Accurate identification of animal species is a critical component for wildlife monitoring. Camera traps are used a lot for this, especially those equipped with night-vision capabilities. These cameras take pictures even in the dark. However, these night-time images suffer challenges such as poor illumination, motion blur, etc., making manual species identification difficult.
 
-This project aims to develop a machine learning model capable of detecting and classifying six different animal species from night-vision camera trap images. The goal is to build a model that mimics the human ability to recognize animals even under difficult visual conditions.
+This project aims to develop a machine learning model capable of detecting and classifying six different animal species from night-vision camera trap images and videos. The goal is to build a model that mimics the human ability to recognize animals even under difficult visual conditions.
 
-We will utilize YOLO (You Only Look Once) algorithm, an objection detection model which is known for its real-time processing speed and high accuracy. It is also well suited for complex background, which is also present in wildlife images.
+We will utilize YOLO (You Only Look Once) algorithm, an objection detection model which is known for its real-time processing speed and high accuracy. Specifically we will use both Yolo11 and Yolo12. It is also well suited for complex background, which is also present in wildlife images.
 
 ---
 
@@ -32,7 +32,7 @@ This project focuses on the **automated detection and classification of wildlife
 
 We have taken AmurLeopard, AmurTiger, LeopardCat, RedFox, Weasel, WildBoar for training and testing.
 
-By training a **custom YOLOv11/YOLOv12 model** on annotated wildlife images, this project enables real-time animal detection with high accuracy in both day and night settings.
+By training a **custom YOLOv11/YOLOv12 model** on annotated wildlife images, this project enables real-time animal detection with high **precision** and **recall** in both day and night settings.
 
 ---
 
@@ -112,6 +112,7 @@ jupyter notebook
 
 Create a new ipynb file and paste the code given in `dataset_split.ipynb`. This script automates the process of:
 - Splitting your Day and Night datasets into **training**, **validation**, and **test** sets.
+- The split ratio is **70%** training, **15%** validation and **15%** test.
 - Organizing images and labels into the required YOLO format folder structure.
 
 Make sure that this ipynb file is present in the same location as of the datasets.
@@ -173,10 +174,12 @@ You can use these as templates and **edit them as needed**. Make sure to store t
 
 ## 🎯 Step 5: Training and Evaluating the YOLO Models
 
-To train and evaluate your YOLO models, two Jupyter Notebook files have been provided in this repository:
+To train and evaluate your YOLO models, four Jupyter Notebook files have been provided in this repository:
 
-- `yolo11_final_model.ipynb`
-- `yolo12_final_model.ipynb`
+- `yolo11_day.ipynb`
+- `yolo11_night.ipynb`
+- `yolo12_day.ipynb`
+- `yolo12_night.ipynb`
 
 These notebooks contain the full pipeline for:
 - Training on the `Day` dataset
@@ -224,8 +227,10 @@ Before starting training the model, your project structure should look like belo
 ├── 📄 dataset_day.yaml  
 ├── 📄 dataset_night.yaml  
 ├── 📓 dataset_split.ipynb  
-├── 📓 yolo11_final_model.ipynb  
-└── 📓 yolo12_final_model.ipynb  
+├── 📓 yolo11_day.ipynb 
+├── 📓 yolo11_night.ipynb
+├── 📓 yolo12_day.ipynb 
+└── 📓 yolo12_night.ipynb  
 
 ---
 
