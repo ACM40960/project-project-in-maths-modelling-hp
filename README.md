@@ -175,6 +175,77 @@ You can use these as templates and **edit them as needed**. Make sure to store t
 
 ## 🎯 Step 5: Training and Evaluating the YOLO Models
 
+Before training your model, it's best practice to set up a virtual environment.
+
+### 📦 Setting Up a Virtual Environment
+
+Using a virtual environment helps isolate project-specific dependencies from your global Python installation. This ensures:
+
+- 🔐 No conflicts between package versions across different projects  
+- 🧪 Reproducibility of your code environment  
+- 🧹 Clean and manageable development setups  
+
+Follow these steps to create and activate a virtual environment for this project:
+
+---
+
+#### ✅ Step 1: Create the Virtual Environment
+
+Open your terminal in the project folder. Use the following command to create a virtual environment named `yolov-env`.  
+Suppose your project is in the `F:` drive. Then run:
+
+```bash
+F:\Project> python -m venv yolov-env
+```
+
+This will create a folder named `yolov-env` containing all environment files.
+
+---
+
+#### ⚙️ Step 2: Activate the Environment
+
+Activate the environment based on your OS.
+
+```bash
+# Windows (Command Prompt)
+F:\Project\yolov-env\Scripts\activate
+```
+
+Once activated, your terminal prompt will show the environment name like this:
+
+```bash
+(yolov-env) F:\Project>
+```
+
+---
+
+#### 📚 Step 3: Add the Environment to Jupyter
+
+With the environment active, install the IPython kernel package:
+
+```bash
+(yolov-env) F:\Project> pip install ipykernel
+```
+
+Then register the environment as a Jupyter kernel:
+
+```bash
+(yolov-env) F:\Project> python -m ipykernel install --user --name=yolov-env --display-name "Python (yolov-env)"
+```
+
+You can now select **"Python (yolov-env)"** from the kernel options in Jupyter Notebook.
+
+---
+
+💡 *Tip: To deactivate the environment at any time, just run:*
+
+```bash
+deactivate
+```
+
+---
+
+
 To train and evaluate your YOLO models, four Jupyter Notebook files have been provided in this repository:
 
 - `yolo11_day.ipynb`
