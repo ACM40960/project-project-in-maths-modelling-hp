@@ -175,6 +175,21 @@ You can use these as templates and **edit them as needed**. Make sure to store t
 
 ## 🎯 Step 5: Training and Evaluating the YOLO Models
 
+To train and evaluate your YOLO models, four Jupyter Notebook files have been provided in this repository:
+
+- `yolo11_day.ipynb`
+- `yolo11_night.ipynb`
+- `yolo12_day.ipynb`
+- `yolo12_night.ipynb`
+
+These notebooks contain the full pipeline for:
+- Training on the `Day` dataset
+- Fine-tuning on the `Night` dataset
+- Evaluating model performance
+- Running inference on test images and videos
+
+More instructions are given inside the notebook for model training and evaluation. Make sure to place the notebook files in the same location as of the datasets and run the files in the same order as given above.
+
 Before training your model, it's best practice to set up a virtual environment.
 
 ### 📦 Setting Up a Virtual Environment
@@ -245,22 +260,13 @@ deactivate
 
 ---
 
+In the same activated environment, open jupyter notebook as given below:
 
-To train and evaluate your YOLO models, four Jupyter Notebook files have been provided in this repository:
+```bash
+(yolov-env) F:\Project>jupyter notebook 
+```
 
-- `yolo11_day.ipynb`
-- `yolo11_night.ipynb`
-- `yolo12_day.ipynb`
-- `yolo12_night.ipynb`
-
-These notebooks contain the full pipeline for:
-- Training on the `Day` dataset
-- Fine-tuning on the `Night` dataset
-- Evaluating model performance
-- Running inference on test images and videos
-
-More instructions are given inside the notebook for model training and evaluation. Make sure to place the notebook files in the same location as of the datasets.
-
+Once the jupyter notebook opens, you can see the 4 jupyter notebook files for training and evaluation, if you followed all the above steps correctly. Now can you run them.
 ---
 
 # Structure of the Project
