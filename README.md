@@ -196,45 +196,43 @@ More instructions are given inside the notebook for model training and evaluatio
 
 Before starting training the model, your project structure should look like below.
 
-📁 Project Root  
+📁 **Project Root**  
 ├── 📁 Day  
-│    ├── 🗂️ Annotations  
-│    ├── 🖼️ JPEGImages  
-│    ├── 🏷️ labels  
-│    └── 📜 script.py  
+│   ├── 🗂️ Annotations  
+│   ├── 🖼️ JPEGImages  
+│   ├── 🏷️ labels  
+│   └── 📜 script.py  
 ├── 📁 Night  
-│    ├── 🗂️ Annotations  
-│    ├── 🖼️ JPEGImages  
-│    ├── 🏷️ labels  
-│    └── 📜 script.py  
+│   ├── 🗂️ Annotations  
+│   ├── 🖼️ JPEGImages  
+│   ├── 🏷️ labels  
+│   └── 📜 script.py  
 ├── 📁 dataset_day  
-│    ├── 📁 images  
-│    │    ├── 🧪 test  
-│    │    ├── 🏋️ train  
-│    │    └── ✅ val  
-│    ├── 📁 labels  
-│    │    ├── 🧪 test  
-│    │    ├── 🏋️ train  
-│    │    └── ✅ val  
+│   ├── 📁 images  
+│   │   ├── 🧪 test  
+│   │   ├── 🏋️ train  
+│   │   └── ✅ val  
+│   ├── 📁 labels  
+│   │   ├── 🧪 test  
+│   │   ├── 🏋️ train  
+│   │   └── ✅ val  
 ├── 📁 dataset_night  
-│    ├── 📁 images  
-│    │    ├── 🧪 test  
-│    │    ├── 🏋️ train  
-│    │    └── ✅ val  
-│    ├── 📁 labels  
-│    │    ├── 🧪 test  
-│    │    ├── 🏋️ train  
-│    │    └── ✅ val  
+│   ├── 📁 images  
+│   │   ├── 🧪 test  
+│   │   ├── 🏋️ train  
+│   │   └── ✅ val  
+│   ├── 📁 labels  
+│   │   ├── 🧪 test  
+│   │   ├── 🏋️ train  
+│   │   └── ✅ val  
 ├── 📄 dataset_day.yaml  
 ├── 📄 dataset_night.yaml  
 ├── 📓 dataset_split.ipynb  
-├── 📓 yolo11_day.ipynb 
-
-├── 📓 yolo11_night.ipynb
-
-├── 📓 yolo12_day.ipynb 
-
+├── 📓 yolo11_day.ipynb  
+├── 📓 yolo11_night.ipynb  
+├── 📓 yolo12_day.ipynb  
 └── 📓 yolo12_night.ipynb  
+
 
 ---
 
