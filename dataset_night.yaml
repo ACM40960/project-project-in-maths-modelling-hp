@@ -1,0 +1,13 @@
+path: dataset_night  # base path to the dataset folder
+
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: AmurLeopard
+  1: AmurTiger
+  2: LeopardCat
+  3: RedFox
+  4: Weasel
+  5: WildBoar
