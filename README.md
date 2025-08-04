@@ -32,7 +32,7 @@ We will utilize YOLO (You Only Look Once) algorithm, an objection detection mode
 
 ---
 
-# 🐾 Wildlife Species Detection using Night-Vision Camera Trap Data
+# 🐾 Wildlife Species Detection using Night-Vision Camera Trap Media
 
 <div align="center">
   <img src="Images/Dataset.png" alt="Dataset" width="600"height="400"/>
