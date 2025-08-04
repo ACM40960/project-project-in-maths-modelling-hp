@@ -26,7 +26,7 @@
 # 🐾 Wildlife Species Detection using Night-Vision Camera Trap Media
 
 <div align="center">
-  <img src="Images/Dataset.png" alt="Dataset"/>
+  <img src="Images/Dataset.png" alt="Dataset" width="400" height="400"/>
 </div>
 
 ## 📌 Introduction
