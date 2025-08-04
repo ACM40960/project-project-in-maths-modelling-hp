@@ -34,7 +34,7 @@ We will utilize YOLO (You Only Look Once) algorithm, an objection detection mode
 
 # 🐾 Wildlife Species Detection using YOLO
 
-<img src="Images/Dataset.png" alt="Dataset" width="400"/>
+<img src="Images/Dataset.png" alt="Dataset" width="800"/>
 
 ## 📌 What the Project Does
 
