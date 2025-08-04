@@ -566,12 +566,6 @@ Based on the observations above, **YOLOv11 outperforms YOLOv12** in terms of spe
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.  See the [📄 License](./LICENSE) file for more details.
-
----
-
 ## 👥 Project Authors
 
 This project has been jointly developed by:
