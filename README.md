@@ -1,7 +1,7 @@
 ## 📚 Table of Contents
 
-- [📌 Introduction](#introduction)
-- [🐾 Wildlife Species Detection using YOLO](#-wildlife-species-detection-using-yolo)
+- [🐾 Wildlife Species Detection using Night-Vision Camera Trap Media](#-wildlife-species-detection-using-night-vision-camera-trap-media)
+  - [📌 Introduction](#-introduction)
   - [📌 What the Project Does](#-what-the-project-does)
   - [🌟 Why the Project is Useful](#-why-the-project-is-useful)
   - [🚀 How Users Can Get Started with the Project](#-how-users-can-get-started-with-the-project)
@@ -10,20 +10,26 @@
     - [🗂 Step 3: Organize Dataset into Training, Validation, and Test Sets](#-step-3-organize-dataset-into-training-validation-and-test-sets)
     - [📝 Step 4: Create YAML Files for YOLO Training](#-step-4-create-yaml-files-for-yolo-training)
     - [🎯 Step 5: Training and Evaluating the YOLO Models](#-step-5-training-and-evaluating-the-yolo-models)
-- [📁 Structure of the Project](#structure-of-the-project)
-- [📊 Results](#results)
-  - [🌞 YOLOv11 - Day Model Evaluation](#-yolov11---day-model-evaluation)
-  - [🌙 YOLOv11 - Night Model Evaluation](#-yolov11---night-model-evaluation)
-  - [🌞 YOLOv12 - Day Model Evaluation](#-yolov12---day-model-evaluation)
-  - [🌙 YOLOv12 - Night Model Evaluation](#-yolov12---night-model-evaluation)
-- [🧪 YOLOv11 vs YOLOv12 Prediction on Test Images](#-yolov11-vs-yolov12-prediction-on-test-images)
-- [🧪 YOLOv11 vs YOLOv12 Prediction on Web Images](#-yolov11-vs-yolov12-prediction-on-web-images)
-- [🎥 YOLOv11 vs YOLOv12 Video Detection Comparison](#-yolov11-vs-yolov12-video-detection-comparison)
-- [👥 Project Authors](#-project-authors)
+  - [📁 Structure of the Project](#-structure-of-the-project)
+  - [📊 Results](#-results)
+    - [🌞 YOLOv11 - Day Model Evaluation](#-yolov11---day-model-evaluation)
+    - [🌙 YOLOv11 - Night Model Evaluation](#-yolov11---night-model-evaluation)
+    - [🌞 YOLOv12 - Day Model Evaluation](#-yolov12---day-model-evaluation)
+    - [🌙 YOLOv12 - Night Model Evaluation](#-yolov12---night-model-evaluation)
+  - [🧪 YOLOv11 vs YOLOv12 Prediction on Test Images](#-yolov11-vs-yolov12-prediction-on-test-images)
+  - [🧪 YOLOv11 vs YOLOv12 Prediction on Web Images](#-yolov11-vs-yolov12-prediction-on-web-images)
+  - [🎥 YOLOv11 vs YOLOv12 Video Detection Comparison](#-yolov11-vs-yolov12-video-detection-comparison)
+  - [👥 Project Authors](#-project-authors)
 
 ---
 
-# Introduction
+# 🐾 Wildlife Species Detection using Night-Vision Camera Trap Media
+
+<div align="center">
+  <img src="Images/Dataset.png" alt="Dataset"/>
+</div>
+
+## 📌 Introduction
 Accurate identification of animal species is a critical component for wildlife monitoring. Camera traps are used a lot for this, especially those equipped with night-vision capabilities. These cameras take pictures even in the dark. However, these night-time images suffer challenges such as poor illumination, motion blur, etc., making manual species identification difficult.
 
 This project aims to develop a machine learning model capable of detecting and classifying six different animal species from night-vision camera trap images and videos. The goal is to build a model that mimics the human ability to recognize animals even under difficult visual conditions.
@@ -31,13 +37,6 @@ This project aims to develop a machine learning model capable of detecting and c
 We will utilize YOLO (You Only Look Once) algorithm, an objection detection model which is known for its real-time processing speed and high accuracy. Specifically we will use both Yolo11 and Yolo12. It is also well suited for complex background, which is also present in wildlife images.
 
 ---
-
-# 🐾 Wildlife Species Detection using Night-Vision Camera Trap Media
-
-<div align="center">
-  <img src="Images/Dataset.png" alt="Dataset" width="600"height="400"/>
-</div>
-
 
 ## 📌 What the Project Does
 
