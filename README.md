@@ -19,6 +19,7 @@
 - [🧪 YOLOv11 vs YOLOv12 Prediction on Test Images](#-yolov11-vs-yolov12-prediction-on-test-images)
 - [🧪 YOLOv11 vs YOLOv12 Prediction on Web Images](#-yolov11-vs-yolov12-prediction-on-web-images)
 - [🎥 YOLOv11 vs YOLOv12 Video Detection Comparison](#-yolov11-vs-yolov12-video-detection-comparison)
+- [📄 License](#-license)
 - [👥 Project Authors](#-project-authors)
 
 ---
@@ -565,14 +566,25 @@ Based on the observations above, **YOLOv11 outperforms YOLOv12** in terms of spe
 
 ---
 
+## 📄 License
+
+This project is licensed under the **MIT License**.  See the [LICENSE](LICENSE) file for more details.
+
+---
+
 ## 👥 Project Authors
 
 This project has been jointly developed by:
 
-- **Harsh Mehta**  
-- **Pranav Agwan**  
+- **Harsh Mehta** – [harsh.mehta@ucdconnect.ie](mailto:harsh.mehta@ucdconnect.ie)  
+- **Pranav Agwan** – [pranav.agwan@ucdconnect.ie](mailto:pranav.agwan@ucdconnect.ie)  
 
-We both are Master's students in the **Data & Computational Science** program at **University College Dublin**, and we collaborated on this project with the goal of applying advanced machine learning techniques to real-world ecological challenges, specifically in the domain of automated wildlife species detection using night-vision imagery.
+We are Master's students in the **Data & Computational Science** program at **University College Dublin**. This project was developed as part of our academic work to apply advanced machine learning techniques to real-world ecological challenges — specifically, automated wildlife species detection using night-vision imagery.
 
-- 💡 We welcome constructive feedback and contributions from the community.
-- 🛠 To contribute, feel free to fork the repository, create a new feature branch, and submit a Pull Request (PR).
+We welcome constructive feedback and contributions from the community.
+
+To contribute:
+- 💡 Fork the repository  
+- 🛠 Create a new feature branch  
+- 🔁 Submit a Pull Request (PR)  
+- 🐞 Or open an issue on the GitHub repository!
