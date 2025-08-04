@@ -34,6 +34,8 @@ We will utilize YOLO (You Only Look Once) algorithm, an objection detection mode
 
 # 🐾 Wildlife Species Detection using YOLO
 
+![Dataset](Images/Dataset.png)
+
 ## 📌 What the Project Does
 
 This project focuses on the **automated detection and classification of wildlife species** captured using **night-vision camera traps**, using the **YOLO (You Only Look Once)** object detection algorithm. The system is trained to identify **six animal species** (or more, depending on your selection) in challenging visual environments, particularly during night time when traditional image clarity is compromised.
