@@ -19,7 +19,7 @@
   - [🧪 YOLOv11 vs YOLOv12 Prediction on Test Images](#-yolov11-vs-yolov12-prediction-on-test-images)
   - [🧪 YOLOv11 vs YOLOv12 Prediction on Web Images](#-yolov11-vs-yolov12-prediction-on-web-images)
   - [🎥 YOLOv11 vs YOLOv12 Video Detection Comparison](#-yolov11-vs-yolov12-video-detection-comparison)
-  - [🖼️ Project Poster](#-project-poster)
+  - [🖼️ Project Poster](#%EF%B8%8F-project-poster)
   - [👥 Project Authors](#-project-authors)
 
 ---
@@ -570,7 +570,7 @@ Based on the observations above, **YOLOv11 outperforms YOLOv12** in terms of spe
 
 ---
 
-## 👥 Project Authors
+## 🖼️ Project Poster
 
 You can download the detailed poster for the project from the link below:
 
@@ -578,7 +578,7 @@ You can download the detailed poster for the project from the link below:
 
 ---
 
-## 🖼️ Project Poster
+## 👥 Project Authors
 
 This project has been jointly developed by:
 
