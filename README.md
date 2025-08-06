@@ -570,7 +570,7 @@ Based on the observations above, **YOLOv11 outperforms YOLOv12** in terms of spe
 
 ---
 
-## 🖼️ Project Poster
+## 👥 Project Authors
 
 You can download the detailed poster for the project from the link below:
 
@@ -578,7 +578,7 @@ You can download the detailed poster for the project from the link below:
 
 ---
 
-## 👥 Project Authors
+## 🖼️ Project Poster
 
 This project has been jointly developed by:
 
