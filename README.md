@@ -19,7 +19,7 @@
   - [🧪 YOLOv11 vs YOLOv12 Prediction on Test Images](#-yolov11-vs-yolov12-prediction-on-test-images)
   - [🧪 YOLOv11 vs YOLOv12 Prediction on Web Images](#-yolov11-vs-yolov12-prediction-on-web-images)
   - [🎥 YOLOv11 vs YOLOv12 Video Detection Comparison](#-yolov11-vs-yolov12-video-detection-comparison)
-  - [🖼️ Project Poster](#-project-poster)
+  - [🖼️ Project Poster](#-project-authors)
   - [👥 Project Authors](#-project-authors)
 
 ---
