@@ -19,6 +19,7 @@
   - [🧪 YOLOv11 vs YOLOv12 Prediction on Test Images](#-yolov11-vs-yolov12-prediction-on-test-images)
   - [🧪 YOLOv11 vs YOLOv12 Prediction on Web Images](#-yolov11-vs-yolov12-prediction-on-web-images)
   - [🎥 YOLOv11 vs YOLOv12 Video Detection Comparison](#-yolov11-vs-yolov12-video-detection-comparison)
+  - [🖼️ Project Poster](#-project-poster)
   - [👥 Project Authors](#-project-authors)
 
 ---
@@ -566,6 +567,14 @@ Overall, **YOLOv11 demonstrates greater reliability and fewer critical misclassi
 - YOLOv11 successfully identified the Wild Boar. However, YOLOv12 occasionally confused the Wild Boar with the Leopard Cat.
 
 Based on the observations above, **YOLOv11 outperforms YOLOv12** in terms of species identification accuracy. YOLOv11 demonstrates better consistency and fewer misclassifications across various species.
+
+---
+
+## 🖼️ Project Poster
+
+You can download the detailed poster for the project from the link below:
+
+👉 [***Download Here***](Poster.pdf)
 
 ---
 
