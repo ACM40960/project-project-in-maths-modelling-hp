@@ -10,8 +10,8 @@
     - [🗂 Step 3: Organize Dataset into Training, Validation, and Test Sets](#-step-3-organize-dataset-into-training-validation-and-test-sets)
     - [📝 Step 4: Create YAML Files for YOLO Training](#-step-4-create-yaml-files-for-yolo-training)
     - [🎯 Step 5: Training and Evaluating the YOLO Models](#-step-5-training-and-evaluating-the-yolo-models)
-  - [📁 Structure of the Project](#-structure-of-the-project)
-  - [📊 Results](#-results)
+  - [📁 Structure of the Project](#structure-of-the-project)
+  - [📊 Results](#results)
     - [🌞 YOLOv11 - Day Model Evaluation](#-yolov11---day-model-evaluation)
     - [🌙 YOLOv11 - Night Model Evaluation](#-yolov11---night-model-evaluation)
     - [🌞 YOLOv12 - Day Model Evaluation](#-yolov12---day-model-evaluation)
@@ -93,13 +93,13 @@ By training a **custom YOLOv11/YOLOv12 model** on annotated wildlife images, thi
    
      - 📁 Annotations
 
-- 🐾 There are a total of 17 species. You can select any number of species you want from voc_day and voc_night and store JPEGImages and Annotations in Day and Night folders respectively.
-- 📌Make sure to correctly store the image and its respective annotation.
+- 🐾 There are a total of 17 species in the downloaded dataset. You can select any number of species you want from voc_day and voc_night and store JPEGImages and Annotations in Day and Night folders respectively.
+- 📌 Make sure to correctly store the image and its respective annotation.
 -  If you're using your own images, follow the same folder format.
 
 ## 🔄 Step 2: Converting XML to YOLO Format
 
-YOLO requires annotations in `.txt` format. A conversion script (`script.py`) is provided in this repository.
+YOLO requires annotations in `.txt` format, and for our images we have annotations in `PASCAL VOC (.xml format)`. A conversion script (`script.py`) is provided in this repository, which converts the annotations to the required `.txt` format.
 
 Before running the script:
 - Open `script.py` and modify the `species` list to include the names of only those species you want to include in your model.
@@ -118,18 +118,18 @@ Do this for both Day and Night. This will generate a new folder called `labels` 
 
 ## 🗂 Step 3: Organize Dataset into Training, Validation, and Test Sets
 
-Again open the terminal in the same location and open jupyter notebook from the following command:
+Now open the terminal in the main project location and open jupyter notebook from the following command:
 
 ```
 jupyter notebook
 ```
 
-Create a new ipynb file and paste the code given in `dataset_split.ipynb`. This script automates the process of:
+Create a new ipynb file and paste the code given in `dataset_split.ipynb` or you can directly use this file given in the repository through jupyter notebook. This script automates the process of:
 - Splitting your Day and Night datasets into **training**, **validation**, and **test** sets.
 - The split ratio is **70%** training, **15%** validation and **15%** test.
 - Organizing images and labels into the required YOLO format folder structure.
 
-Make sure that this ipynb file is present in the same location as of the datasets.
+Make sure that this ipynb file is present in the same location as of the datasets. Also, change the species list given in the code as required.
 
 ### What the script does:
 
@@ -183,7 +183,7 @@ You can use these as templates and **edit them as needed**. Make sure to store t
    - The index numbers (0, 1, 2...) must match the first number in each line of your .txt label
    files.
    - For example, if a label file starts with 2 0.56 0.33 0.25 0.18, it corresponds to the
-   species at index 2 in the YAML file (Leopard in this case).
+   species at index 2 in the YAML file (LeopardCat in this case).
    - Make sure to check the index number of each species in one of their label files and update it in the yaml file.
 
 ## 🎯 Step 5: Training and Evaluating the YOLO Models
@@ -228,10 +228,9 @@ This will create a folder named `yolov-env` containing all environment files.
 
 #### ⚙️ Step 2: Activate the Environment
 
-Activate the environment based on your OS.
+Activate the environment.
 
 ```bash
-# Windows (Command Prompt)
 F:\Project\yolov-env\Scripts\activate
 ```
 
@@ -519,9 +518,9 @@ Before starting training the model, your project structure should look like belo
 
 **From the above results of performance of the two models, YOLOv11 and YOLOv12, the following can be interpreted:**
 - YOLOv11 consistently outperforms or matches YOLOv12 in terms of identification accuracy across six species.  
-- Both models performed equally well for **Amur Leopard**.  
+- Both models performed equally well for **Amur Leopard** and **Weasel**.  
 - YOLOv11 slightly fell behind YOLOv12 in identifying **Amur Tiger**.  
-- YOLOv11 outperformed YOLOv12 in recognizing **Leopard Cat**, **Red Fox**, **Weasel**, and **Wild Boar**.  
+- YOLOv11 outperformed YOLOv12 in recognizing **Leopard Cat**, **Red Fox**, and **Wild Boar**.  
 
 Overall, **YOLOv11 demonstrates better consistency and reliability across species**, making it the **preferable model** for wildlife image identification.
 
