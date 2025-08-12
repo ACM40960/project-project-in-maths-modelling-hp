@@ -330,7 +330,7 @@ Before starting training the model, your project structure should look like belo
 | WildBoar      | 106    | 108       | 0.966     | 0.981  | 0.978   | 0.854        |
 
 **The following can be interpreted from the above table:**
-- The model achieves **high precision (0.989)**, **recall (0.982)**, and **mAP@0.5 (0.991)**, indicating accurate and consistent object detection with minimal false positives or negatives.
+- The model achieves **high precision (0.989)**, **recall (0.982)**, and **mAP@0.5 (0.991)**, reflecting strong detection capability with minimal false positives or negatives.
 - At a stricter IoU threshold (**mAP@0.5:0.95 = 0.860**), the model still performs well, demonstrating strong object localization capabilities.
 - **Amur Tiger** and **Leopard Cat** are among the best-detected classes with near-perfect scores.
 - **Weasel** is the most challenging class, showing slightly lower recall and localization accuracy.
@@ -340,11 +340,11 @@ Before starting training the model, your project structure should look like belo
 ![Confusion Matrix](Images/yolo11_day_cm.png)
 
 **The following can be interpreted from the above plot:**
-- The model correctly classifies nearly all instances for each class, indicated by a strong diagonal (e.g., 107 correct predictions per class).
+- The model correctly classifies nearly all instances for each class, indicated by a strong diagonal.
 - Misclassifications are minimal and mostly involve confusion with the **background** class.
 - **Weasel** and **LeopardCat** had a few cases misclassified as background.
 - A few background samples were incorrectly predicted as animal classes.
-- The matrix confirms **high classification accuracy** and **excellent precision/recall**.
+- The matrix confirms **high classification strength** and **excellent precision/recall**.
 
 ### 📈 YOLOv11 Day - Precision-Recall Curve
 ![PR Curve](Images/yolo11_day_pr.png)
@@ -376,7 +376,7 @@ Before starting training the model, your project structure should look like belo
 | WildBoar      | 75     | 77        | 1.000     | 0.970  | 0.989   | 0.865        |
 
 **The following can be interpreted from the above table:**
-- The model achieves **high precision (0.972)**, **recall (0.971)**, and **mAP@0.5 (0.989)**, indicating strong detection accuracy with minimal false positives and negatives.  
+- The model achieves **high precision (0.972)**, **recall (0.971)**, and **mAP@0.5 (0.989)**, indicating reliable detection with minimal errors.  
 - At a stricter IoU threshold (**mAP@0.5:0.95 = 0.852**), the model maintains good localization performance, showing robustness under challenging conditions.  
 - **Amur Leopard** and **Amur Tiger** achieve **perfect recall (1.000)** and **very high precision (0.985 & 0.984)**, making them the best-performing classes.  
 - **Weasel** shows the lowest recall (0.920) and mAP@0.5:0.95 (0.801), suggesting it’s the most difficult class to detect reliably at night.  
@@ -388,9 +388,10 @@ Before starting training the model, your project structure should look like belo
 **The following can be interpreted from the above plot:**
 - The model correctly classifies nearly all instances, indicated by a strong diagonal in the matrix.  
 - **Amur Leopard**, **Amur Tiger**, and **WildBoar** show **perfect or near-perfect predictions** with no significant confusion.  
-- **LeopardCat** had minor confusion with **RedFox** and **background**, and **Weasel** had 6 misclassifications with **background**, reinforcing its lower recall.  
+- **LeopardCat** had minor confusion with **RedFox** and **background**, reinforcing its lower recall.
+- **Weasel** had 6 misclassifications with **background**, also reinforcing its lower recall.  
 - There are a few false positives for animal classes from background, which is expected in low-light scenarios.  
-- Overall, the matrix reflects **strong classification accuracy**, even under more difficult night settings.
+- Overall, the matrix reflects **strong classification performance**, even under more difficult night settings.
 
 ### 📈 YOLOv11 Night - Precision-Recall Curve
 ![PR Curve](Images/yolo11_night_pr.png)
@@ -433,10 +434,10 @@ Before starting training the model, your project structure should look like belo
 ![Confusion Matrix](Images/yolo12_day_cm.png)
 
 **The following can be interpreted from the above plot:**
-- The model accurately classifies nearly all instances, as indicated by the **strong diagonal values** (e.g., AmurLeopard: 107/108 correct, AmurTiger: 107/108 correct).
-- Misclassifications are **minimal and sparse**, primarily involving the **background class** or slight inter-class confusion (e.g., Weasel misclassified as WildBoar 7 times).
+- The model accurately classifies nearly all instances, as indicated by the **strong diagonal values**.
+- Misclassifications are **minimal and sparse**, primarily involving the **background class** or slight inter-class confusion.
 - A small number of background samples were falsely predicted as animal classes.
-- **Weasel and WildBoar** show the highest number of off-diagonal misclassifications but still maintain strong overall accuracy.
+- **Weasel and WildBoar** show the highest number of off-diagonal misclassifications but still maintain strong overall performance.
 - The matrix confirms **excellent class separability**, with the model handling multi-class prediction very effectively.
 
 ### 📈 YOLOv12 Day - Precision-Recall Curve
@@ -445,7 +446,7 @@ Before starting training the model, your project structure should look like belo
 **The following can be interpreted from the above plot:**
 - All classes exhibit **very high average precision**, demonstrating excellent object detection performance across species.
 - The precision-recall curves are tightly clustered in the **top-right region**, indicating consistently strong recall and precision.
-- The model effectively **balances detection accuracy and robustness**, successfully minimizing both false positives and false negatives.
+- The model effectively **balances detection capability and robustness**, successfully minimizing both false positives and false negatives.
 - This consistency suggests the model is highly reliable for **real-world deployment and wildlife monitoring applications**.
 
 ### 📊 YOLOv12 Day - F1 Score Curve 
@@ -483,7 +484,7 @@ Before starting training the model, your project structure should look like belo
 - The diagonal values are **consistently strong**, indicating accurate predictions for the majority of instances per class.
 - **Misclassifications are minimal**, with some confusion between **Leopard Cat**, **Red Fox**, and **Weasel**, either with each other or the background.
 - There are **occasional false positives and false negatives** involving the background, but these are relatively rare.
-- The confusion matrix confirms **high classification accuracy**, with opportunities for refinement in **differentiating similar or nocturnally camouflaged species**.
+- The confusion matrix confirms **strong classification performance**, with opportunities for refinement in **differentiating similar or nocturnally camouflaged species**.
 
 ### 📈 YOLOv12 Night - Precision-Recall Curve
 ![PR Curve](Images/yolo12_night_pr.png)
@@ -492,7 +493,7 @@ Before starting training the model, your project structure should look like belo
 - All classes exhibit **very high average precision**, contributing to the strong overall **mAP@0.5 of 0.988**.
 - The curves are clustered near the **top-right**, reflecting a good balance between precision and recall.
 - The model is **effective at minimizing both false positives and false negatives**.
-- **Red Fox** and **Weasel** show relatively lower AP than other classes, indicating **marginally lower confidence or localization accuracy** in these cases.
+- **Red Fox** and **Weasel** show relatively lower AP than other classes, indicating **marginally lower confidence or localization performance** in these cases.
 
 ### 📊 YOLOv12 Night - F1 Score Curve 
 ![F1 Curve](Images/yolo12_night_f1.png)
@@ -558,14 +559,14 @@ Overall, **YOLOv11 demonstrates greater reliability and fewer critical misclassi
 | WildBoar       | ![](Video/wildboar_11.gif)               | ![](Video/wildboar_12.gif)               |
 
 **From the above results of performance of the two models, YOLOv11 and YOLOv12, the following can be interpreted:**
-- Both YOLOv11 and YOLOv12 correctly identified Amur Leopard in the video, demonstrating consistent performance for this species.
-- YOLOv11 accurately identified the Amur Tiger, whereas YOLOv12 showed inconsistency by occasionally misclassifying it and even falsely detecting the presence of a Wild Boar when none was present.
-- YOLOv11 performed well in identifying the Leopard Cat. In contrast, YOLOv12 often misclassified the Leopard Cat as either a Red Fox or a Wild Boar.
-- Both models showed good performance in identifying the Red Fox correctly from the video.
-- YOLOv11 correctly detected the Weasel, but YOLOv12 misclassified it in some instances, sometimes falsely detecting it as an Amur Tiger.
-- YOLOv11 successfully identified the Wild Boar. However, YOLOv12 occasionally confused the Wild Boar with the Leopard Cat.
+- Both **YOLOv11** and **YOLOv12** correctly identified **Amur Leopard** in the video, demonstrating **consistent performance** for this species.  
+- **YOLOv11** **correctly identified** the **Amur Tiger**, whereas **YOLOv12** showed **inconsistency** by occasionally **misclassifying** it and even **falsely detecting** the presence of a **Wild Boar** when none was present.  
+- **YOLOv11** performed well in identifying the **Leopard Cat**. In contrast, **YOLOv12** often **misclassified** the **Leopard Cat** as either a **Red Fox** or a **Wild Boar**.  
+- Both models showed **good performance** in identifying the **Red Fox** correctly from the video.  
+- **YOLOv11** correctly detected the **Weasel**, but **YOLOv12** **misclassified** it in some instances, sometimes **falsely detecting** it as an **Amur Tiger**.  
+- **YOLOv11** successfully identified the **Wild Boar**. However, **YOLOv12** occasionally **confused** the **Wild Boar** with the **Leopard Cat**.  
 
-Based on the observations above, **YOLOv11 outperforms YOLOv12** in terms of species identification accuracy. YOLOv11 demonstrates better consistency and fewer misclassifications across various species.
+Based on the observations above, **YOLOv11 outperforms YOLOv12** in terms of **species identification performance**. **YOLOv11** demonstrates **better consistency** and **fewer misclassifications** across various species.  
 
 ---
 
