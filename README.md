@@ -582,8 +582,8 @@ You can download the detailed poster for the project from the link below:
 
 This project has been jointly developed by:
 
-- **Harsh Mehta** – [harsh.mehta@ucdconnect.ie](mailto:harsh.mehta@ucdconnect.ie)  
-- **Pranav Agwan** – [pranav.agwan@ucdconnect.ie](mailto:pranav.agwan@ucdconnect.ie)  
+- **Harsh Mehta (Student Number: 24208383)** – [harsh.mehta@ucdconnect.ie](mailto:harsh.mehta@ucdconnect.ie)  
+- **Pranav Agwan (Student Number: 24219261)** – [pranav.agwan@ucdconnect.ie](mailto:pranav.agwan@ucdconnect.ie)  
 
 We are Master's students in the **Data & Computational Science** program at **University College Dublin**. This project was developed as part of our academic work to apply advanced machine learning techniques to real-world ecological challenges — specifically, automated wildlife species detection using night-vision imagery.
 
